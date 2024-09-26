@@ -1,12 +1,11 @@
-var express = require('express');
+var express = require("express");
 var app = express();
 
 function main() {
-  
-  app.use(express.static('/storage/sd'));
+  app.use(express.static(__dirname));
 
-  app.listen(9090, function() {
-    console.log('Example app listening on port 9090!');
+  app.listen(9090, function () {
+    console.log("Example app listening on port 9090!");
   });
 }
 
